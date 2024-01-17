@@ -37,40 +37,62 @@
   }
 }
 
-.nav-ul{
+.nav-ul {
   width: 100%;
-  
 }
 
-.nav-ul ul{
-  display:flex;
+.nav-ul ul {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color:bisque;
+  background-color: bisque;
 
   text-decoration: none;
-  list-style-type: none
+  list-style-type: none;
 }
 
-.nav-ul ul li{
+.nav-ul ul li {
   margin: 0 20px;
   text-decoration: none;
   list-style-type: none;
-  
 }
 
-.nav-ul ul li a{
+.nav-ul ul li a {
   text-decoration: none;
   color: black;
   font-size: large;
   font-weight: bold;
-  
 }
 
-.footer{
+.footer {
   position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
-  background-color:bisque;
+  background-color: bisque;
+}
+
+.sign{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+  align-items: center;
+}
+
+.inputBox {
+  display: block;
+  margin: 25px;
+  padding: 7px;
+  width: 300px;
+  border: 2px solid rgb(216, 94, 29);
+}
+
+.but{
+  margin: 5px 10px;
+  padding: 5px;
+  background-color: blanchedalmond;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
 }

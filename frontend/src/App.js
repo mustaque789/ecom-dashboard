@@ -19,15 +19,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import './App.css';
-import Product from './Product';
-import Profile from './Profile';
-import Update from './Update';
-import Logout from './Logout';
-import AddProduct from './AddProduct';
-import Footer from './Footer';
+import Nav from './components/Nav';
+import Product from './components/Product';
+import Profile from './components/Profile';
+import Update from './components/Update';
+import Logout from './components/Logout';
+import AddProduct from './components/AddProduct';
+import Footer from './components/Footer';
+import SignUp from './components/SignUp';
 
-
-import Nav from './Nav';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 
@@ -65,6 +65,10 @@ const appRouter = createBrowserRouter([
       {
         path:"/logout",
         element:<Logout/>
+      },
+      {
+        path:"/signup",
+        element:<SignUp/>
       }
     ]
   }
