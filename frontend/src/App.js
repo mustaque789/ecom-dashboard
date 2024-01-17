@@ -23,17 +23,20 @@ import Product from './Product';
 import Profile from './Profile';
 import Update from './Update';
 import Logout from './Logout';
-import AppProduct from './AddProduct';
+import AddProduct from './AddProduct';
+import Footer from './Footer';
+
 
 import Nav from './Nav';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import AddProduct from './AddProduct';
+
 
 const App = ()=>{
   return(
     <div className='nav-ul'>
          <Nav/>
          <Outlet/>
+         <Footer/>
     </div>
   )
 }

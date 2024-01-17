@@ -37,13 +37,40 @@
   }
 }
 
+.nav-ul{
+  width: 100%;
+  
+}
 
 .nav-ul ul{
   display:flex;
   justify-content: center;
   align-items: center;
+  background-color:bisque;
+
+  text-decoration: none;
+  list-style-type: none
 }
 
 .nav-ul ul li{
   margin: 0 20px;
+  text-decoration: none;
+  list-style-type: none;
+  
+}
+
+.nav-ul ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color:bisque;
 }
