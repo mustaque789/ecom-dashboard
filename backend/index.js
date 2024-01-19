@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose');
+require('./db/config')
 
 const connectDB = async ()=>{
-    mongoose.connect('mongodb://127.0.0.1:27017/e-comm');   // mongoose connection with the database 'e-comm'
+       // mongoose connection with the database 'e-comm'
 
     const productSchema= new mongoose.Schema({});    // Schema :- we can keep schema empty if we are fetching data or while using GET method
 
