@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 require('./db/config')
 const User = require('./db/User')
+
+app.use(express.json())
  
 // const connectDB = async ()=>{
 //        // mongoose connection with the database 'e-comm'
@@ -16,8 +18,20 @@ const User = require('./db/User')
 
 // connectDB();
 
+
+
+// METHOD 1 
+
+// app.post("/register",async(req,res)=>{
+// let data = new User(req.body);
+// let result =  await data.save();
+// res.send(result)
+// })
+
+
+// METHOD 2
 app.post("/register",(req,res)=>{
-res.send("Api is working perfect")
+    res.send(req.body)
 })
 
 app.listen(5005)
