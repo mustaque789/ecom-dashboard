@@ -24,16 +24,16 @@ app.use(cors());
 
 // METHOD 1 
 
-// app.post("/register",async(req,res)=>{
-// let data = new User(req.body);
-// let result =  await data.save();
-// res.send(result)
-// })
+app.post("/register",async(req,res)=>{
+let data = new User(req.body);
+let result =  await data.save();
+res.send(result)
+})
 
 
 // METHOD 2
-app.post("/register",(req,res)=>{
-    res.send(req.body)
-})
+// app.post("/register",(req,res)=>{
+//     res.send(req.body)
+// })
 
 app.listen(5005)

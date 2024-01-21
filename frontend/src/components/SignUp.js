@@ -7,8 +7,20 @@ const SignUp = ()=>{
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
   
-    const collectData = ()=>{
+    const collectData = async ()=>{
         console.warn(name,email,password)
+
+        let result = await fetch("http://localhost:5005/register",
+        {
+           method:'post',
+           body:JSON.stringify({name, email, password}),
+           headers: {
+            'Content-Type':'application/json'
+           }
+        })
+
+        result =await result.json();
+        console.warn(result)
     }
                                              // onClick={}  :- by clicking what should happen
     return(                                 // onChange={(e)=>{setName(e.target.value)}}  :- captures any change occurs in text and saves into setName
