@@ -9,6 +9,7 @@ const SignUp = ()=>{
     const [password, setPassword] = useState("");
 
     const navigate = useNavigate();
+    
   
     const collectData = async ()=>{
         console.warn(name,email,password)
