@@ -9,7 +9,7 @@ const SignUp = ()=>{
     const [password, setPassword] = useState("");
 
     const navigate = useNavigate();
-    
+    // navigate to next screen
   
     const collectData = async ()=>{
         console.warn(name,email,password)
