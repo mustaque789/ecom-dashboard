@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = ()=>{
 
     const [name, setName]  = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+    const navigate = useNavigate();
   
     const collectData = async ()=>{
         console.warn(name,email,password)
@@ -21,6 +24,8 @@ const SignUp = ()=>{
 
         result =await result.json();
         console.warn(result)
+
+        navigate('/')
     }
                                              // onClick={}  :- by clicking what should happen
     return(                                 // onChange={(e)=>{setName(e.target.value)}}  :- captures any change occurs in text and saves into setName
