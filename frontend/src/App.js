@@ -30,7 +30,7 @@ import SignUp from './components/SignUp';
 
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
-
+// structure of entire page layout
 const App = ()=>{
   return(
     <div className='nav-ul'>
