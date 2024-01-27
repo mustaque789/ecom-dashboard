@@ -21,6 +21,7 @@ app.use(cors());
 // connectDB();
 
 
+// connect mongodb with node js
 
 // METHOD 1 
 
