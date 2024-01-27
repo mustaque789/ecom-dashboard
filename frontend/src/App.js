@@ -40,7 +40,7 @@ const App = ()=>{
     </div>
   )
 }
-// routes for 
+// routes for all pages
 const appRouter = createBrowserRouter([
   {
     path:"/",
