@@ -41,6 +41,8 @@ const App = ()=>{
   )
 }
 // routes for all pages
+// createbrowser route
+
 const appRouter = createBrowserRouter([
   {
     path:"/",
