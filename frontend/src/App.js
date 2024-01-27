@@ -40,7 +40,7 @@ const App = ()=>{
     </div>
   )
 }
-// routes
+// routes for 
 const appRouter = createBrowserRouter([
   {
     path:"/",
