@@ -41,7 +41,7 @@ const App = ()=>{
   )
 }
 // routes for all pages
-// component route-routing
+// component route
 
 const appRouter = createBrowserRouter([
   {
